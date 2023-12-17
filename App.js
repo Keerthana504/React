@@ -1,14 +1,38 @@
-const heading = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", { id: "first1" }, "First H1"),
-    React.createElement("h2", { id: "second1" }, "First H2"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", { id: "first2" }, "Second H1"),
-    React.createElement("h2", { id: "second2" }, "Second H2"),
-  ]),
-]);
+import React from "react";
+import ReactDOM from "react-dom";
+
+//createElemnet ==> object -> HTML (on rendering)
+
+const heading = React.createElement(
+  "h1",
+  { id: "heading" },
+  "Merry Christmas Back!!!"
+);
+
+//React Component
+//Function component --> Function that returns JSX
+
+const elem = <span>Keerthana</span>;
+const title = <h1>Good Morning!!!{elem}</h1>;
+
+const TitleComponent = () => {
+  return <h1>Good evening</h1>;
+};
+
+const HeadingComponent = () => {
+  return (
+    <div>
+      {title}
+      <TitleComponent></TitleComponent>
+      <h1>Hello 2024</h1>;
+    </div>
+  );
+};
+
+// JSX is not HTML in JS
+// JSX ==> babel transpiles it to  React.createElement before it reaches the JS engine --> parcel - babel
+const jsxHeading = <h1>Welcome again!!</h1>;
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(root);
-console.log(heading);
-root.render(heading);
+
+root.render(<HeadingComponent />);
