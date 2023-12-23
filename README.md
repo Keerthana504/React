@@ -17,3 +17,27 @@
 - https
 - Tree shaking algorithm - remove unused code
 - different dev and prod bundles
+
+UI Layout / Wirefire / UI Mockup for Swiggy
+
+- App Name
+- Header
+- body
+- Footer
+
+LLD
+
+- Header
+  - logo
+  - Nav elements
+- Body
+
+  - search
+  - Restaurant cards
+    - Name , rating ,price, images
+
+- Footer
+  - links
+  - copyright
+  - address
+  - contact
