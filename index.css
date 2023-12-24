@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+.m-left {
+  margin-left: 5px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -202,6 +206,7 @@ a {
   width: 225px;
   border-radius: 5px;
   box-shadow: -3px -4px 14px 0px #0d0000;
+  height: 250px;
 }
 
 .res-desc {
@@ -224,6 +229,8 @@ a {
   color: rgb(87, 87, 87);
   font-weight: 200;
   margin-top: 6px;
+  display: grid;
+  gap: 15px;
 }
 
 .res-desc .rating {
