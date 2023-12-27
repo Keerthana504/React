@@ -7,6 +7,8 @@ import bannerImg from "./assets/kisspng-milkshake-juice3.png";
 import bannerImg2 from "./assets/Thali.png";
 import data from "./imageGridCard.json";
 import dataSet from "./restaurantsInfo.json";
+import leftArr from "./assets/icons8-left-arrow-50.png";
+import rightArr from "./assets/icons8-right-arrow-50.png";
 
 const Header = () => {
   return (
@@ -16,6 +18,26 @@ const Header = () => {
           <img className="logo" src={chefLogo} alt="logo"></img>
           <span className="logo-text">Beyond Eats</span>
         </a>
+        <div className="divider-y"></div>
+        <section className="search-container">
+          <svg
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="rgba(2, 6, 12, 0.75)"
+          >
+            <path
+              d="M7.46869 3.43394C7.79171 3.13249 8.29794 3.14998 8.59939 3.473C8.90083 3.79602 8.88334 4.30225 8.56033 4.60369L5.0839 7.84795C4.94511 7.97748 4.82252 8.0921 4.71414 8.19502L15.0937 8.19502C15.5355 8.19502 15.8937 8.5532 15.8937 8.99502C15.8937 9.43685 15.5355 9.79502 15.0937 9.79502L4.6665 9.79502C4.78625 9.90939 4.92436 10.0386 5.08389 10.1875L8.51791 13.3922C8.84092 13.6937 8.8584 14.1999 8.55695 14.5229C8.2555 14.8459 7.74927 14.8634 7.42626 14.5619L3.95463 11.3221C3.54648 10.9413 3.18179 10.601 2.92647 10.2871C2.64873 9.94573 2.41671 9.53755 2.41672 9.01769C2.41672 8.49783 2.64874 8.08965 2.92648 7.74824C3.18181 7.43439 3.54649 7.09412 3.95465 6.7133L7.46869 3.43394Z"
+              fill-opacity="0.92"
+            ></path>
+          </svg>
+          <input
+            placeholder="Search for Dishes and Restaurants"
+            type="search"
+            id=""
+            name=""
+          ></input>
+        </section>
       </section>
       <nav className="nav-items">
         <ul className="sidebar">
@@ -62,10 +84,26 @@ const Header = () => {
             <a href="#">Contact</a>
           </li>
           <li className="hideOnMobile">
-            <a href="#">Cart</a>
+            <a href="#">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/dusk/64/shopping-cart--v1.png"
+                alt="shopping-cart--v1"
+              />
+              Cart
+            </a>
           </li>
           <li className="hideOnMobile">
-            <a href="#">Login</a>
+            <a href="#">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/stickers/100/gender-neutral-user.png"
+                alt="gender-neutral-user"
+              />
+              Login
+            </a>
           </li>
           <li className="menu-button" onClick={showSidebar}>
             <a href="#">
@@ -104,7 +142,21 @@ const Banner = () => {
     <section className="banner">
       <article>
         Order Food Online! <br></br>add spice & chill to your plate.{" "}
-        <span className="curve"></span>
+        <span className="curve">
+          <svg
+            width="70%"
+            height="90%"
+            viewBox="0 0 78 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 5.25939C27 -0.240624 53.5 -0.2406 77 4.25939"
+              stroke="#F15700"
+              stroke-width="2.0"
+            ></path>
+          </svg>
+        </span>
       </article>
       <div>
         <img src={bannerImg} alt="lassi"></img>
@@ -116,25 +168,47 @@ const Banner = () => {
 
 const processImageData = (data) => {
   let imgList = data.info;
-  console.log("1", imgList);
+  let link =
+    "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/";
+
+  // console.log("1", imgList);
   const newImgList = imgList.map((item) => {
     let imgId;
-    if (imgList[item].imageId) {
-      imgId = imgList[item].imageId;
+    if (item.imageId) {
+      imgId = item.imageId;
     }
     return link + imgId;
   });
-  console.log("2", newImgList);
+  // console.log("2", newImgList);
   return newImgList;
 };
 
+const moveLeftImg = () => {};
+
+const moveRightImg = () => {};
+
 const DishesCarousel = (props) => {
+  console.log(props);
   let newImgList = processImageData(props.imgData);
+  console.log(newImgList);
   return (
-    <section>
-      {newImgList.map((id) => {
-        <img src={id}></img>;
-      })}
+    <section className="carousel-box">
+      <div className="carousel-text">
+        <p className="sub-heading">What's on your mind?</p>
+        <p className="carousel-btn">
+          <button disabled onClick={() => moveLeftImg()}>
+            <img src={leftArr}></img>
+          </button>
+          <button>
+            <img src={rightArr} onClick={() => moveRightImg()}></img>
+          </button>
+        </p>
+      </div>
+      <div className="carousel-img">
+        {newImgList.map((id) => {
+          return <img src={id} alt="carousel image"></img>;
+        })}
+      </div>
     </section>
   );
 };
@@ -142,8 +216,6 @@ const DishesCarousel = (props) => {
 const RestaurantCard = (props) => {
   const info = props.data.info;
   const link = props.data.cta.link;
-  console.log(info.cuisines);
-  console.log("2", info);
   return (
     <section className="res-card" key={info.id}>
       <a href={link} target="_blank">
@@ -174,789 +246,43 @@ const RestaurantCard = (props) => {
   );
 };
 
-const resData = [
-  {
-    info: {
-      id: "414835",
-      name: "Pizza Hut",
-      cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
-      locality: "Khairatabad",
-      areaName: "Khairatabad",
-      costForTwo: "₹350 for two",
-      cuisines: ["Pizzas"],
-      avgRating: 4,
-      parentId: "721",
-      avgRatingString: "4.0",
-      totalRatingsString: "1K+",
-      sla: {
-        deliveryTime: 59,
-        lastMileTravel: 1.9,
-        serviceability: "SERVICEABLE",
-        slaString: "55-60 mins",
-        lastMileTravelString: "1.9 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-23 00:00:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      aggregatedDiscountInfoV2: {},
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/pizza-hut-khairatabad-hyderabad-414835",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "376914",
-      name: "Theobroma",
-      cloudinaryImageId: "b033728dcb0101ceb19bff0e1e1f6474",
-      locality: "Central Zone",
-      areaName: "Somajiguda & Khairtabad",
-      costForTwo: "₹400 for two",
-      cuisines: ["Desserts"],
-      avgRating: 4.6,
-      parentId: "1040",
-      avgRatingString: "4.6",
-      totalRatingsString: "1K+",
-      sla: {
-        deliveryTime: 40,
-        lastMileTravel: 3.7,
-        serviceability: "SERVICEABLE",
-        slaString: "35-40 mins",
-        lastMileTravelString: "3.7 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-23 00:00:00",
-        opened: true,
-      },
-      badges: {
-        imageBadges: [
-          {
-            imageId: "newg.png",
-            description: "Gourmet",
-          },
-        ],
-      },
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {
-            badgeObject: [
-              {
-                attributes: {
-                  description: "Gourmet",
-                  imageId: "newg.png",
-                },
-              },
-            ],
-          },
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "10% OFF",
-        subHeader: "ABOVE ₹159",
-        discountTag: "FLAT DEAL",
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/theobroma-central-zone-somajiguda-and-khairtabad-hyderabad-376914",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "32129",
-      name: "Burger King",
-      cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf",
-      locality: "Himayath Nagar",
-      areaName: "Himayath Nagar",
-      costForTwo: "₹350 for two",
-      cuisines: ["Burgers", "American"],
-      avgRating: 4.2,
-      parentId: "166",
-      avgRatingString: "4.2",
-      totalRatingsString: "10K+",
-      sla: {
-        deliveryTime: 52,
-        lastMileTravel: 1.5,
-        serviceability: "SERVICEABLE",
-        slaString: "50-55 mins",
-        lastMileTravelString: "1.5 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-23 03:45:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "ITEMS",
-        subHeader: "AT ₹129",
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/burger-king-himayath-nagar-hyderabad-32129",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "124165",
-      name: "Starbucks Coffee",
-      cloudinaryImageId: "258fe8a3577877fbfe064095ed1d9dc3",
-      locality: "GVK1 Mall",
-      areaName: "Banjara Hills",
-      costForTwo: "₹400 for two",
-      cuisines: [
-        "Beverages",
-        "Cafe",
-        "Snacks",
-        "Desserts",
-        "Bakery",
-        "Ice Cream",
-      ],
-      avgRating: 4.3,
-      parentId: "195515",
-      avgRatingString: "4.3",
-      totalRatingsString: "5K+",
-      sla: {
-        deliveryTime: 57,
-        lastMileTravel: 4.8,
-        serviceability: "SERVICEABLE",
-        slaString: "55-60 mins",
-        lastMileTravelString: "4.8 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-22 22:00:00",
-        opened: true,
-      },
-      badges: {
-        textExtendedBadges: [
-          {
-            iconId: "guiltfree/GF_Logo_android_3x",
-            shortDescription: "options available",
-            fontColor: "#7E808C",
-          },
-        ],
-      },
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {
-            badgeObject: [
-              {
-                attributes: {
-                  description: "",
-                  fontColor: "#7E808C",
-                  iconId: "guiltfree/GF_Logo_android_3x",
-                  shortDescription: "options available",
-                },
-              },
-            ],
-          },
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "ITEMS",
-        subHeader: "AT ₹219",
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/starbucks-coffee-gvk1-mall-banjara-hills-hyderabad-124165",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "74979",
-      name: "Ohri's Cake Nation",
-      cloudinaryImageId: "77ab0c8da09a193b8fa4694b591d3301",
-      locality: "Basheerbagh",
-      areaName: "Basheerbagh",
-      costForTwo: "₹450 for two",
-      cuisines: ["Bakery", "Desserts", "Beverages"],
-      avgRating: 4.4,
-      veg: true,
-      parentId: "233127",
-      avgRatingString: "4.4",
-      totalRatingsString: "1K+",
-      sla: {
-        deliveryTime: 28,
-        lastMileTravel: 0.7,
-        serviceability: "SERVICEABLE",
-        slaString: "25-30 mins",
-        lastMileTravelString: "0.7 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-22 23:59:00",
-        opened: true,
-      },
-      badges: {
-        imageBadges: [
-          {
-            imageId: "v1695133679/badges/Pure_Veg111.png",
-            description: "pureveg",
-          },
-        ],
-      },
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {
-            badgeObject: [
-              {
-                attributes: {
-                  description: "pureveg",
-                  imageId: "v1695133679/badges/Pure_Veg111.png",
-                },
-              },
-            ],
-          },
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "60% OFF",
-        subHeader: "UPTO ₹120",
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/ohris-cake-nation-basheerbagh-hyderabad-74979",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "4138",
-      name: "Grand Hotel",
-      cloudinaryImageId: "g1arzw6qd7g9affkmgzk",
-      locality: "Banjara Hills",
-      areaName: "Abids",
-      costForTwo: "₹300 for two",
-      cuisines: ["Biryani", "Chinese", "Tandoor", "Haleem"],
-      avgRating: 4.3,
-      parentId: "4001",
-      avgRatingString: "4.3",
-      totalRatingsString: "10K+",
-      sla: {
-        deliveryTime: 36,
-        lastMileTravel: 3,
-        serviceability: "SERVICEABLE",
-        slaString: "35-40 mins",
-        lastMileTravelString: "3.0 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-22 23:59:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "10% OFF",
-        subHeader: "UPTO ₹40",
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/grand-hotel-banjara-hills-abids-hyderabad-4138",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "153046",
-      name: "Huber & Holly",
-      cloudinaryImageId: "cujunjtk1tta0i8t9ffw",
-      locality: "RAFSA TOWER",
-      areaName: "Himayath Nagar",
-      costForTwo: "₹500 for two",
-      cuisines: ["Pizzas", "Beverages", "Ice Cream"],
-      avgRating: 4.3,
-      veg: true,
-      parentId: "6433",
-      avgRatingString: "4.3",
-      totalRatingsString: "1K+",
-      sla: {
-        deliveryTime: 30,
-        lastMileTravel: 1.8,
-        serviceability: "SERVICEABLE",
-        slaString: "30-35 mins",
-        lastMileTravelString: "1.8 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-23 02:00:00",
-        opened: true,
-      },
-      badges: {
-        imageBadges: [
-          {
-            imageId: "newg.png",
-            description: "Gourmet",
-          },
-        ],
-      },
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {
-            badgeObject: [
-              {
-                attributes: {
-                  description: "Gourmet",
-                  imageId: "newg.png",
-                },
-              },
-            ],
-          },
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "50% OFF",
-        subHeader: "UPTO ₹100",
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/huber-and-holly-rafsa-tower-himayath-nagar-hyderabad-153046",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "355747",
-      name: "Grameen Kulfi",
-      cloudinaryImageId: "mwggy9gmdboqzi7gloms",
-      locality: "KMIT",
-      areaName: "Narayanguda",
-      costForTwo: "₹120 for two",
-      cuisines: ["Ice Cream", "Desserts"],
-      avgRating: 4.6,
-      veg: true,
-      parentId: "12175",
-      avgRatingString: "4.6",
-      totalRatingsString: "1K+",
-      sla: {
-        deliveryTime: 32,
-        lastMileTravel: 2.4,
-        serviceability: "SERVICEABLE",
-        slaString: "30-35 mins",
-        lastMileTravelString: "2.4 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-22 23:59:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "60% OFF",
-        subHeader: "UPTO ₹120",
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/grameen-kulfi-kmit-narayanguda-hyderabad-355747",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "24613",
-      name: "Domino's Pizza",
-      cloudinaryImageId: "hbeqc0r6ifvqiuychft2",
-      locality: "Stock Exchange Road",
-      areaName: "Himayath Nagar",
-      costForTwo: "₹400 for two",
-      cuisines: ["Pizzas", "Italian", "Pastas", "Desserts"],
-      avgRating: 4.4,
-      parentId: "2456",
-      avgRatingString: "4.4",
-      totalRatingsString: "10K+",
-      sla: {
-        deliveryTime: 25,
-        serviceability: "SERVICEABLE",
-        slaString: "25 mins",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-22 23:59:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "₹150 OFF",
-        subHeader: "ABOVE ₹299",
-        discountTag: "FLAT DEAL",
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/dominos-pizza-stock-exchange-road-himayath-nagar-hyderabad-24613",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "395225",
-      name: "McDonald's Gourmet Burger Collection",
-      cloudinaryImageId: "d3eewg9jbq6a94fzzc8k",
-      locality: "Alto Trade Center",
-      areaName: "Himayatnagar",
-      costForTwo: "₹600 for two",
-      cuisines: ["Burgers", "Beverages", "Cafe", "Desserts"],
-      avgRating: 4.3,
-      parentId: "10761",
-      avgRatingString: "4.3",
-      totalRatingsString: "500+",
-      sla: {
-        deliveryTime: 35,
-        lastMileTravel: 1.5,
-        serviceability: "SERVICEABLE",
-        slaString: "30-35 mins",
-        lastMileTravelString: "1.5 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-23 01:45:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      aggregatedDiscountInfoV2: {},
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/mcdonalds-gourmet-burger-collection-alto-trade-center-himayatnagar-hyderabad-395225",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "27665",
-      name: "Pista House",
-      cloudinaryImageId: "xrnrtevdf9w3pfvxlaei",
-      locality: "Himayath Nagar",
-      areaName: "Himayath Nagar",
-      costForTwo: "₹200 for two",
-      cuisines: ["Bakery", "Pizzas", "Snacks", "Desserts"],
-      avgRating: 4.4,
-      parentId: "1732",
-      avgRatingString: "4.4",
-      totalRatingsString: "10K+",
-      sla: {
-        deliveryTime: 33,
-        lastMileTravel: 3,
-        serviceability: "SERVICEABLE",
-        slaString: "30-35 mins",
-        lastMileTravelString: "3.0 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-22 22:30:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "15% OFF",
-        subHeader: "UPTO ₹45",
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/pista-house-himayath-nagar-hyderabad-27665",
-      type: "WEBLINK",
-    },
-  },
-  {
-    info: {
-      id: "23707",
-      name: "McDonald's",
-      cloudinaryImageId: "bb7ae131544c7d37e10fc5faf76f09d6",
-      locality: "Himayath Nagar",
-      areaName: "Himayath Nagar",
-      costForTwo: "₹400 for two",
-      cuisines: ["Burgers", "Beverages", "Cafe", "Desserts"],
-      avgRating: 4.3,
-      parentId: "630",
-      avgRatingString: "4.3",
-      totalRatingsString: "10K+",
-      sla: {
-        deliveryTime: 30,
-        lastMileTravel: 1.5,
-        serviceability: "SERVICEABLE",
-        slaString: "25-30 mins",
-        lastMileTravelString: "1.5 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-23 01:45:00",
-        opened: true,
-      },
-      badges: {
-        textExtendedBadges: [
-          {
-            iconId: "guiltfree/GF_Logo_android_3x",
-            shortDescription: "options available",
-            fontColor: "#7E808C",
-          },
-        ],
-      },
-      isOpen: true,
-      aggregatedDiscountInfoV2: {},
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {
-            badgeObject: [
-              {
-                attributes: {
-                  description: "",
-                  fontColor: "#7E808C",
-                  iconId: "guiltfree/GF_Logo_android_3x",
-                  shortDescription: "options available",
-                },
-              },
-            ],
-          },
-        },
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {},
-    cta: {
-      link: "https://www.swiggy.com/restaurants/mcdonalds-himayath-nagar-hyderabad-23707",
-      type: "WEBLINK",
-    },
-  },
-];
+const showMoreRes = () => {};
 
 const Body = () => {
-  console.log(resData);
   return (
     <main className="body-container">
-      <section className="search-res"></section>
+      <section className="filter-res">
+        <p className="sub-heading">
+          Restaurants with online food delivery in Hyderabad
+        </p>
+        <p></p>
+      </section>
       <section className="res-container">
         {dataSet.map((data) => (
           <RestaurantCard data={data}></RestaurantCard>
         ))}
+        <div className="show-more-section">
+          <button className="show-more" onClick={() => showMoreRes()}>
+            Show More
+            <svg
+              width="12"
+              height="13"
+              viewBox="0 0 12 13"
+              fill="none"
+              aria-hidden="true"
+              strokecolor="rgba(2, 6, 12, 0.92)"
+              fillcolor="rgba(2, 6, 12, 0.6)"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.30875 4.27703C0.931854 4.60108 0.889014 5.16932 1.21307 5.54622L4.57534 9.45679C4.58439 9.46731 4.59351 9.47793 4.6027 9.48863C4.75431 9.66514 4.92366 9.86231 5.08944 10.0078C5.28433 10.1788 5.5905 10.385 6.01603 10.385C6.44156 10.385 6.74773 10.1788 6.94262 10.0078C7.1084 9.86232 7.27776 9.66515 7.42937 9.48865C7.43856 9.47795 7.44768 9.46733 7.45673 9.4568L10.7864 5.58418C11.1105 5.20729 11.0677 4.63905 10.6908 4.31499C10.3139 3.99093 9.74563 4.03377 9.42157 4.41066L6.09187 8.28328C6.06476 8.3148 6.0396 8.34406 6.01604 8.37135C5.99247 8.34406 5.96732 8.3148 5.94021 8.28328L2.57794 4.37271C2.25389 3.99581 1.68565 3.95297 1.30875 4.27703Z"
+                fill="rgba(2, 6, 12, 0.6)"
+                fill-opacity="0.92"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </section>
     </main>
   );
@@ -1016,6 +342,7 @@ const AppLayout = () => {
       <Header></Header>
       <Banner></Banner>
       <DishesCarousel imgData={data}></DishesCarousel>
+      <div className="divider"></div>
       <Body></Body>
       <Footer></Footer>
     </div>
