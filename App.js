@@ -217,7 +217,7 @@ const RestaurantCard = (props) => {
   const info = props.data.info;
   const link = props.data.cta.link;
   return (
-    <section className="res-card" key={info.id}>
+    <section className="res-card" id={info.id}>
       <a href={link} target="_blank">
         <img
           className="res-img"
@@ -263,7 +263,7 @@ const Body = () => {
         ))}
         <div className="show-more-section">
           <button className="show-more" onClick={() => showMoreRes()}>
-            Show More
+            <p>Show More</p>
             <svg
               width="12"
               height="13"
@@ -297,41 +297,109 @@ const Footer = () => {
             <img className="logo" src={chefLogo} alt="logo"></img>
             <span className="logo-text">Beyond Eats</span>
           </a>
-          <p className="copy-right">© 2024 Beyond Eats and Company Pvt. Ltd</p>
+          <section className="social">
+            <ul>
+              <li>
+                <a href="#">
+                  <i className="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i className="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </section>
         </section>
-        <section className="details">
-          <p className="main">Company</p>
-          <p>
-            <a href="">About</a>
-          </p>
-          <p>
-            <a href="">Careers</a>
-          </p>
-          <p>
-            <a href="">Team</a>
-          </p>
+        <section className="sec quick-links">
+          <p className="main">Quick Links</p>
+          <ul>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Careers & Team</a>
+            </li>
+            <li>
+              <a href="">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="">FAQ</a>
+            </li>
+          </ul>
         </section>
-        <section className="details">
+        <section className="sec details">
           <p className="main">Contact Us</p>
-          <p>
-            <a href="">Partner With Us</a>
-          </p>
-          <p>
-            <a href="">Ride With Us</a>
-          </p>
+          <div className="contact-details">
+            <ul>
+              <li>
+                <a href="">Partner With Us</a>
+              </li>
+              <li>
+                <a href="">Ride With Us</a>
+              </li>
+              <li>
+                <span>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </span>
+                <span>
+                  <a href="mailto:enquire@beyondeats.com">
+                    enquire@beyondeats.com
+                  </a>
+                </span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </span>
+                <span>
+                  1234 Avenue Street <br></br>
+                  Park County, Hyderabad 500048<br></br> India
+                </span>
+              </li>
+              <li>
+                <span>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </span>
+                <br></br>
+                <span>
+                  <a href="tel:+914442349990">+91 444 234 9990</a>
+                  <a href="tel:+911234567890">+91 1234567890</a>
+                </span>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section className="details">
+        <section className="sec details">
           <p className="main">Locations</p>
-          <p>Hyderabad</p>
-          <p>Chennai</p>
-          <p>Bengaluru</p>
-          <p>Kochi</p>
-          <p>Mumbai</p>
+          <ul>
+            <li>Hyderabad</li>
+            <li>Chennai</li>
+            <li>Bengaluru</li>
+            <li>Kochi</li>
+            <li>Mumbai</li>
+          </ul>
         </section>
       </div>
       <span className="footer-img">
         <img src={footerImg} alt="Footer Image"></img>
       </span>
+      <p className="copy-right">
+        Copyright © 2024 Beyond Eats and Company Pvt. Ltd. All Rights Reserved.
+      </p>
     </footer>
   );
 };
