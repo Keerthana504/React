@@ -144,7 +144,7 @@ const Banner = () => {
         Order Food Online! <br></br>add spice & chill to your plate.{" "}
         <span className="curve">
           <svg
-            width="70%"
+            width="45%"
             height="90%"
             viewBox="0 0 78 6"
             fill="none"
@@ -185,7 +185,9 @@ const processImageData = (data) => {
 
 const moveLeftImg = () => {};
 
-const moveRightImg = () => {};
+const moveRightImg = () => {
+  const btn = document.querySelector("");
+};
 
 const DishesCarousel = (props) => {
   console.log(props);
@@ -196,11 +198,19 @@ const DishesCarousel = (props) => {
       <div className="carousel-text">
         <p className="sub-heading">What's on your mind?</p>
         <p className="carousel-btn">
-          <button disabled onClick={() => moveLeftImg()}>
+          <button
+            className="disabled"
+            id="left-btn"
+            onClick={() => moveLeftImg()}
+          >
             <img src={leftArr}></img>
           </button>
           <button>
-            <img src={rightArr} onClick={() => moveRightImg()}></img>
+            <img
+              src={rightArr}
+              id="right-btn"
+              onClick={() => moveRightImg()}
+            ></img>
           </button>
         </p>
       </div>
@@ -349,7 +359,7 @@ const Footer = () => {
               <li>
                 <a href="">Ride With Us</a>
               </li>
-              <li>
+              <li className="info">
                 <span>
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                 </span>
@@ -359,10 +369,8 @@ const Footer = () => {
                   </a>
                 </span>
               </li>
-            </ul>
-            <ul>
-              <li>
-                <span>
+              <li className="m-bottom info">
+                <span className="m-right">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </span>
                 <span>
@@ -370,13 +378,13 @@ const Footer = () => {
                   Park County, Hyderabad 500048<br></br> India
                 </span>
               </li>
-              <li>
+              <li className="info">
                 <span>
                   <i class="fa fa-phone" aria-hidden="true"></i>
                 </span>
-                <br></br>
                 <span>
                   <a href="tel:+914442349990">+91 444 234 9990</a>
+                  <br></br>
                   <a href="tel:+911234567890">+91 1234567890</a>
                 </span>
               </li>
@@ -386,17 +394,27 @@ const Footer = () => {
         <section className="sec details">
           <p className="main">Locations</p>
           <ul>
-            <li>Hyderabad</li>
-            <li>Chennai</li>
-            <li>Bengaluru</li>
-            <li>Kochi</li>
-            <li>Mumbai</li>
+            <li>
+              <a>Hyderabad</a>
+            </li>
+            <li>
+              <a>Chennai</a>
+            </li>
+            <li>
+              <a>Bengaluru</a>
+            </li>
+            <li>
+              <a>Kochi</a>
+            </li>
+            <li>
+              <a>Mumbai</a>
+            </li>
           </ul>
         </section>
       </div>
-      <span className="footer-img">
+      {/* <span className="footer-img">
         <img src={footerImg} alt="Footer Image"></img>
-      </span>
+      </span> */}
       <p className="copy-right">
         Copyright © 2024 Beyond Eats and Company Pvt. Ltd. All Rights Reserved.
       </p>
