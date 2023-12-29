@@ -18,7 +18,11 @@
 - Tree shaking algorithm - remove unused code
 - different dev and prod bundles
 
-UI Layout / Wirefire / UI Mockup for Swiggy
+#React Superpowers
+
+- React hooks
+
+#UI Layout / Wirefire / UI Mockup for Food ordering app
 
 - App Name
 - Header

@@ -1,5 +1,5 @@
-import logo from "./assets/Beyond.jpg";
-import icon from "./assets/user-icon.jpg";
+import { logo } from "./assets/Beyond.jpg";
+import { icon } from "./assets/user-icon.jpg";
 import "./day1.css";
 
 const HeaderComp = () => {
