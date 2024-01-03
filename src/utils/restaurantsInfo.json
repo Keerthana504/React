@@ -1,1327 +1,6 @@
 [
   {
     "info": {
-      "id": "414835",
-      "name": "Pizza Hut",
-      "cloudinaryImageId": "2b4f62d606d1b2bfba9ba9e5386fabb7",
-      "locality": "Khairatabad",
-      "areaName": "Khairatabad",
-      "costForTwo": "₹350 for two",
-      "cuisines": ["Pizzas"],
-      "avgRating": 4,
-      "parentId": "721",
-      "avgRatingString": "4.0",
-      "totalRatingsString": "1K+",
-      "sla": {
-        "deliveryTime": 59,
-        "lastMileTravel": 1.9,
-        "serviceability": "SERVICEABLE",
-        "slaString": "55-60 mins",
-        "lastMileTravelString": "1.9 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-23 00:00:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "aggregatedDiscountInfoV2": {},
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/pizza-hut-khairatabad-hyderabad-414835",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "376914",
-      "name": "Theobroma",
-      "cloudinaryImageId": "b033728dcb0101ceb19bff0e1e1f6474",
-      "locality": "Central Zone",
-      "areaName": "Somajiguda & Khairtabad",
-      "costForTwo": "₹400 for two",
-      "cuisines": ["Desserts"],
-      "avgRating": 4.6,
-      "parentId": "1040",
-      "avgRatingString": "4.6",
-      "totalRatingsString": "1K+",
-      "sla": {
-        "deliveryTime": 40,
-        "lastMileTravel": 3.7,
-        "serviceability": "SERVICEABLE",
-        "slaString": "35-40 mins",
-        "lastMileTravelString": "3.7 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-23 00:00:00",
-        "opened": true
-      },
-      "badges": {
-        "imageBadges": [
-          {
-            "imageId": "newg.png",
-            "description": "Gourmet"
-          }
-        ]
-      },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            "badgeObject": [
-              {
-                "attributes": {
-                  "description": "Gourmet",
-                  "imageId": "newg.png"
-                }
-              }
-            ]
-          },
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "10% OFF",
-        "subHeader": "ABOVE ₹159",
-        "discountTag": "FLAT DEAL"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/theobroma-central-zone-somajiguda-and-khairtabad-hyderabad-376914",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "32129",
-      "name": "Burger King",
-      "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
-      "locality": "Himayath Nagar",
-      "areaName": "Himayath Nagar",
-      "costForTwo": "₹350 for two",
-      "cuisines": ["Burgers", "American"],
-      "avgRating": 4.2,
-      "parentId": "166",
-      "avgRatingString": "4.2",
-      "totalRatingsString": "10K+",
-      "sla": {
-        "deliveryTime": 52,
-        "lastMileTravel": 1.5,
-        "serviceability": "SERVICEABLE",
-        "slaString": "50-55 mins",
-        "lastMileTravelString": "1.5 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-23 03:45:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "ITEMS",
-        "subHeader": "AT ₹129"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/burger-king-himayath-nagar-hyderabad-32129",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "124165",
-      "name": "Starbucks Coffee",
-      "cloudinaryImageId": "258fe8a3577877fbfe064095ed1d9dc3",
-      "locality": "GVK1 Mall",
-      "areaName": "Banjara Hills",
-      "costForTwo": "₹400 for two",
-      "cuisines": [
-        "Beverages",
-        "Cafe",
-        "Snacks",
-        "Desserts",
-        "Bakery",
-        "Ice Cream"
-      ],
-      "avgRating": 4.3,
-      "parentId": "195515",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "5K+",
-      "sla": {
-        "deliveryTime": 57,
-        "lastMileTravel": 4.8,
-        "serviceability": "SERVICEABLE",
-        "slaString": "55-60 mins",
-        "lastMileTravelString": "4.8 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 22:00:00",
-        "opened": true
-      },
-      "badges": {
-        "textExtendedBadges": [
-          {
-            "iconId": "guiltfree/GF_Logo_android_3x",
-            "shortDescription": "options available",
-            "fontColor": "#7E808C"
-          }
-        ]
-      },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {
-            "badgeObject": [
-              {
-                "attributes": {
-                  "description": "",
-                  "fontColor": "#7E808C",
-                  "iconId": "guiltfree/GF_Logo_android_3x",
-                  "shortDescription": "options available"
-                }
-              }
-            ]
-          }
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "ITEMS",
-        "subHeader": "AT ₹219"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/starbucks-coffee-gvk1-mall-banjara-hills-hyderabad-124165",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "74979",
-      "name": "Ohri's Cake Nation",
-      "cloudinaryImageId": "77ab0c8da09a193b8fa4694b591d3301",
-      "locality": "Basheerbagh",
-      "areaName": "Basheerbagh",
-      "costForTwo": "₹450 for two",
-      "cuisines": ["Bakery", "Desserts", "Beverages"],
-      "avgRating": 4.4,
-      "veg": true,
-      "parentId": "233127",
-      "avgRatingString": "4.4",
-      "totalRatingsString": "1K+",
-      "sla": {
-        "deliveryTime": 28,
-        "lastMileTravel": 0.7,
-        "serviceability": "SERVICEABLE",
-        "slaString": "25-30 mins",
-        "lastMileTravelString": "0.7 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 23:59:00",
-        "opened": true
-      },
-      "badges": {
-        "imageBadges": [
-          {
-            "imageId": "v1695133679/badges/Pure_Veg111.png",
-            "description": "pureveg"
-          }
-        ]
-      },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            "badgeObject": [
-              {
-                "attributes": {
-                  "description": "pureveg",
-                  "imageId": "v1695133679/badges/Pure_Veg111.png"
-                }
-              }
-            ]
-          },
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "60% OFF",
-        "subHeader": "UPTO ₹120"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/ohris-cake-nation-basheerbagh-hyderabad-74979",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "4138",
-      "name": "Grand Hotel",
-      "cloudinaryImageId": "g1arzw6qd7g9affkmgzk",
-      "locality": "Banjara Hills",
-      "areaName": "Abids",
-      "costForTwo": "₹300 for two",
-      "cuisines": ["Biryani", "Chinese", "Tandoor", "Haleem"],
-      "avgRating": 4.3,
-      "parentId": "4001",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "10K+",
-      "sla": {
-        "deliveryTime": 36,
-        "lastMileTravel": 3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "35-40 mins",
-        "lastMileTravelString": "3.0 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 23:59:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "10% OFF",
-        "subHeader": "UPTO ₹40"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/grand-hotel-banjara-hills-abids-hyderabad-4138",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "153046",
-      "name": "Huber & Holly",
-      "cloudinaryImageId": "cujunjtk1tta0i8t9ffw",
-      "locality": "RAFSA TOWER",
-      "areaName": "Himayath Nagar",
-      "costForTwo": "₹500 for two",
-      "cuisines": ["Pizzas", "Beverages", "Ice Cream"],
-      "avgRating": 4.3,
-      "veg": true,
-      "parentId": "6433",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "1K+",
-      "sla": {
-        "deliveryTime": 30,
-        "lastMileTravel": 1.8,
-        "serviceability": "SERVICEABLE",
-        "slaString": "30-35 mins",
-        "lastMileTravelString": "1.8 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-23 02:00:00",
-        "opened": true
-      },
-      "badges": {
-        "imageBadges": [
-          {
-            "imageId": "newg.png",
-            "description": "Gourmet"
-          }
-        ]
-      },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            "badgeObject": [
-              {
-                "attributes": {
-                  "description": "Gourmet",
-                  "imageId": "newg.png"
-                }
-              }
-            ]
-          },
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "50% OFF",
-        "subHeader": "UPTO ₹100"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/huber-and-holly-rafsa-tower-himayath-nagar-hyderabad-153046",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "355747",
-      "name": "Grameen Kulfi",
-      "cloudinaryImageId": "mwggy9gmdboqzi7gloms",
-      "locality": "KMIT",
-      "areaName": "Narayanguda",
-      "costForTwo": "₹120 for two",
-      "cuisines": ["Ice Cream", "Desserts"],
-      "avgRating": 4.6,
-      "veg": true,
-      "parentId": "12175",
-      "avgRatingString": "4.6",
-      "totalRatingsString": "1K+",
-      "sla": {
-        "deliveryTime": 32,
-        "lastMileTravel": 2.4,
-        "serviceability": "SERVICEABLE",
-        "slaString": "30-35 mins",
-        "lastMileTravelString": "2.4 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 23:59:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "60% OFF",
-        "subHeader": "UPTO ₹120"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/grameen-kulfi-kmit-narayanguda-hyderabad-355747",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "24613",
-      "name": "Domino's Pizza",
-      "cloudinaryImageId": "hbeqc0r6ifvqiuychft2",
-      "locality": "Stock Exchange Road",
-      "areaName": "Himayath Nagar",
-      "costForTwo": "₹400 for two",
-      "cuisines": ["Pizzas", "Italian", "Pastas", "Desserts"],
-      "avgRating": 4.4,
-      "parentId": "2456",
-      "avgRatingString": "4.4",
-      "totalRatingsString": "10K+",
-      "sla": {
-        "deliveryTime": 25,
-        "serviceability": "SERVICEABLE",
-        "slaString": "25 mins",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 23:59:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "₹150 OFF",
-        "subHeader": "ABOVE ₹299",
-        "discountTag": "FLAT DEAL"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/dominos-pizza-stock-exchange-road-himayath-nagar-hyderabad-24613",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "395225",
-      "name": "McDonald's Gourmet Burger Collection",
-      "cloudinaryImageId": "d3eewg9jbq6a94fzzc8k",
-      "locality": "Alto Trade Center",
-      "areaName": "Himayatnagar",
-      "costForTwo": "₹600 for two",
-      "cuisines": ["Burgers", "Beverages", "Cafe", "Desserts"],
-      "avgRating": 4.3,
-      "parentId": "10761",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "500+",
-      "sla": {
-        "deliveryTime": 35,
-        "lastMileTravel": 1.5,
-        "serviceability": "SERVICEABLE",
-        "slaString": "30-35 mins",
-        "lastMileTravelString": "1.5 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-23 01:45:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "aggregatedDiscountInfoV2": {},
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/mcdonalds-gourmet-burger-collection-alto-trade-center-himayatnagar-hyderabad-395225",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "27665",
-      "name": "Pista House",
-      "cloudinaryImageId": "xrnrtevdf9w3pfvxlaei",
-      "locality": "Himayath Nagar",
-      "areaName": "Himayath Nagar",
-      "costForTwo": "₹200 for two",
-      "cuisines": ["Bakery", "Pizzas", "Snacks", "Desserts"],
-      "avgRating": 4.4,
-      "parentId": "1732",
-      "avgRatingString": "4.4",
-      "totalRatingsString": "10K+",
-      "sla": {
-        "deliveryTime": 33,
-        "lastMileTravel": 3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "30-35 mins",
-        "lastMileTravelString": "3.0 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 22:30:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "15% OFF",
-        "subHeader": "UPTO ₹45"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/pista-house-himayath-nagar-hyderabad-27665",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "23707",
-      "name": "McDonald's",
-      "cloudinaryImageId": "bb7ae131544c7d37e10fc5faf76f09d6",
-      "locality": "Himayath Nagar",
-      "areaName": "Himayath Nagar",
-      "costForTwo": "₹400 for two",
-      "cuisines": ["Burgers", "Beverages", "Cafe", "Desserts"],
-      "avgRating": 4.3,
-      "parentId": "630",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "10K+",
-      "sla": {
-        "deliveryTime": 30,
-        "lastMileTravel": 1.5,
-        "serviceability": "SERVICEABLE",
-        "slaString": "25-30 mins",
-        "lastMileTravelString": "1.5 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-23 01:45:00",
-        "opened": true
-      },
-      "badges": {
-        "textExtendedBadges": [
-          {
-            "iconId": "guiltfree/GF_Logo_android_3x",
-            "shortDescription": "options available",
-            "fontColor": "#7E808C"
-          }
-        ]
-      },
-      "isOpen": true,
-      "aggregatedDiscountInfoV2": {},
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {
-            "badgeObject": [
-              {
-                "attributes": {
-                  "description": "",
-                  "fontColor": "#7E808C",
-                  "iconId": "guiltfree/GF_Logo_android_3x",
-                  "shortDescription": "options available"
-                }
-              }
-            ]
-          }
-        }
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/mcdonalds-himayath-nagar-hyderabad-23707",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "17104",
-      "name": "KFC",
-      "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
-      "locality": "Prime Plaza",
-      "areaName": "Himayatnagar",
-      "costForTwo": "₹400 for two",
-      "cuisines": ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
-      "avgRating": 4.2,
-      "parentId": "547",
-      "avgRatingString": "4.2",
-      "totalRatingsString": "10K+",
-      "sla": {
-        "deliveryTime": 35,
-        "lastMileTravel": 1.5,
-        "serviceability": "SERVICEABLE",
-        "slaString": "35-40 mins",
-        "lastMileTravelString": "1.5 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-23 01:00:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "40% OFF",
-        "subHeader": "UPTO ₹80"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/kfc-prime-plaza-himayatnagar-hyderabad-17104",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "251589",
-      "name": "Euphoria",
-      "cloudinaryImageId": "if3oxttqnbedseg0cpbd",
-      "locality": "Paradise",
-      "areaName": "Paradise Cross Roads",
-      "costForTwo": "₹600 for two",
-      "cuisines": ["Desserts", "Bakery"],
-      "avgRating": 4.8,
-      "parentId": "8132",
-      "avgRatingString": "4.8",
-      "totalRatingsString": "100+",
-      "sla": {
-        "deliveryTime": 36,
-        "lastMileTravel": 4.7,
-        "serviceability": "SERVICEABLE",
-        "slaString": "35-40 mins",
-        "lastMileTravelString": "4.7 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 23:00:00",
-        "opened": true
-      },
-      "badges": {
-        "imageBadges": [
-          {
-            "imageId": "newg.png",
-            "description": "Gourmet"
-          }
-        ]
-      },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            "badgeObject": [
-              {
-                "attributes": {
-                  "description": "Gourmet",
-                  "imageId": "newg.png"
-                }
-              }
-            ]
-          },
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "10% OFF",
-        "subHeader": "UPTO ₹40"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/euphoria-paradise-paradise-cross-roads-hyderabad-251589",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "25251",
-      "name": "Meridian Restaurant",
-      "cloudinaryImageId": "cxvuxxwpkicbqo3nkqiy",
-      "locality": "Panjagutta",
-      "areaName": "Panjagutta",
-      "costForTwo": "₹400 for two",
-      "cuisines": ["Biryani", "Chinese", "North Indian", "Kebabs"],
-      "avgRating": 4.3,
-      "parentId": "19276",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "10K+",
-      "sla": {
-        "deliveryTime": 47,
-        "lastMileTravel": 4.2,
-        "serviceability": "SERVICEABLE",
-        "slaString": "45-50 mins",
-        "lastMileTravelString": "4.2 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 23:50:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "aggregatedDiscountInfoV2": {},
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/meridian-restaurant-panjagutta-hyderabad-25251",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "233054",
-      "name": "Sweet Truth - Cake and Desserts",
-      "cloudinaryImageId": "2bff7ef1c40b8a1d356fcf9d487324f9",
-      "locality": "Mahesh Nagar",
-      "areaName": "Abids",
-      "costForTwo": "₹450 for two",
-      "cuisines": ["Snacks", "Bakery", "Desserts", "Beverages"],
-      "avgRating": 4,
-      "parentId": "4444",
-      "avgRatingString": "4.0",
-      "totalRatingsString": "500+",
-      "sla": {
-        "deliveryTime": 42,
-        "lastMileTravel": 2.2,
-        "serviceability": "SERVICEABLE",
-        "slaString": "40-45 mins",
-        "lastMileTravelString": "2.2 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 23:59:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "60% OFF",
-        "subHeader": "UPTO ₹110"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/sweet-truth-cake-and-desserts-mahesh-nagar-abids-hyderabad-233054",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "233052",
-      "name": "Oven Story Pizza - Standout Toppings",
-      "cloudinaryImageId": "f986df6f1a1fcf2ff24d2eaf44d570a7",
-      "locality": "Mahesh Nagar",
-      "areaName": "Abids",
-      "costForTwo": "₹400 for two",
-      "cuisines": ["Pizzas", "Pastas", "Italian", "Desserts", "Beverages"],
-      "avgRating": 4.1,
-      "parentId": "3534",
-      "avgRatingString": "4.1",
-      "totalRatingsString": "5K+",
-      "sla": {
-        "deliveryTime": 25,
-        "lastMileTravel": 2.2,
-        "serviceability": "SERVICEABLE",
-        "slaString": "23-28 mins",
-        "lastMileTravelString": "2.2 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 23:59:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "₹125 OFF",
-        "subHeader": "ABOVE ₹1099",
-        "discountTag": "FLAT DEAL"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/oven-story-pizza-standout-toppings-mahesh-nagar-abids-hyderabad-233052",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "373904",
-      "name": "Baskin Robbins",
-      "cloudinaryImageId": "85ccae4e3576f9330af102c46ca85395",
-      "locality": "BHARGAVI ENCLAVE",
-      "areaName": "Nallakunta & Vidyanagar",
-      "costForTwo": "₹250 for two",
-      "cuisines": ["Desserts", "Ice Cream"],
-      "avgRating": 4.2,
-      "veg": true,
-      "parentId": "5588",
-      "avgRatingString": "4.2",
-      "totalRatingsString": "500+",
-      "sla": {
-        "deliveryTime": 30,
-        "lastMileTravel": 2.3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "25-30 mins",
-        "lastMileTravelString": "2.3 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-29 00:00:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "30% OFF",
-        "subHeader": "UPTO ₹75"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/baskin-robbins-bhargavi-enclave-nallakunta-and-vidyanagar-hyderabad-373904",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "262087",
-      "name": "Imperial Multi-Cusine Restaurant",
-      "cloudinaryImageId": "rqlwvsmzcfxbg9u6ajgm",
-      "locality": "Banjara Hills",
-      "areaName": "Redhills",
-      "costForTwo": "₹400 for two",
-      "cuisines": ["Biryani", "Chinese", "Indian", "Kebabs", "Tandoor"],
-      "avgRating": 4.2,
-      "parentId": "19254",
-      "avgRatingString": "4.2",
-      "totalRatingsString": "10K+",
-      "sla": {
-        "deliveryTime": 42,
-        "lastMileTravel": 3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "40-45 mins",
-        "lastMileTravelString": "3.0 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-23 02:00:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "40% OFF",
-        "subHeader": "UPTO ₹80"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/imperial-multi-cusine-restaurant-banjara-hills-redhills-hyderabad-262087",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "27739",
-      "name": "Cafe Niloufer Classic",
-      "cloudinaryImageId": "882922742c3b3abc54ae9fde6d6c236d",
-      "locality": "Oshiwara",
-      "areaName": "Red Hills",
-      "costForTwo": "₹150 for two",
-      "cuisines": ["Bakery", "Beverages", "Snacks", "Desserts"],
-      "avgRating": 4.6,
-      "parentId": "466854",
-      "avgRatingString": "4.6",
-      "totalRatingsString": "10K+",
-      "sla": {
-        "deliveryTime": 46,
-        "lastMileTravel": 3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "45-50 mins",
-        "lastMileTravelString": "3.0 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-23 00:30:00",
-        "opened": true
-      },
-      "badges": {},
-      "isOpen": true,
-      "aggregatedDiscountInfoV2": {},
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {},
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/cafe-niloufer-classic-oshiwara-red-hills-hyderabad-27739",
-      "type": "WEBLINK"
-    }
-  },
-  {
-    "info": {
-      "id": "547809",
-      "name": "Theobroma",
-      "cloudinaryImageId": "b033728dcb0101ceb19bff0e1e1f6474",
-      "locality": "Himayath Nagar",
-      "areaName": "Himayath Nagar",
-      "costForTwo": "₹400 for two",
-      "cuisines": ["Desserts"],
-      "avgRating": 4.5,
-      "parentId": "1040",
-      "avgRatingString": "4.5",
-      "totalRatingsString": "1K+",
-      "sla": {
-        "deliveryTime": 24,
-        "lastMileTravel": 1,
-        "serviceability": "SERVICEABLE",
-        "slaString": "20-25 mins",
-        "lastMileTravelString": "1.0 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-22 22:55:00",
-        "opened": true
-      },
-      "badges": {
-        "imageBadges": [
-          {
-            "imageId": "newg.png",
-            "description": "Gourmet"
-          }
-        ]
-      },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            "badgeObject": [
-              {
-                "attributes": {
-                  "description": "Gourmet",
-                  "imageId": "newg.png"
-                }
-              }
-            ]
-          },
-          "textBased": {},
-          "textExtendedBadges": {}
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "₹150 OFF",
-        "subHeader": "ABOVE ₹1149",
-        "discountTag": "FLAT DEAL"
-      },
-      "orderabilityCommunication": {
-        "title": {},
-        "subTitle": {},
-        "message": {},
-        "customIcon": {}
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {},
-          "video": {}
-        }
-      },
-      "reviewsSummary": {},
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {}
-    },
-    "analytics": {},
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/theobroma-himayath-nagar-hyderabad-547809",
-      "text": "RESTAURANT_MENU",
-      "type": "WEBLINK"
-    },
-    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-  },
-  {
-    "info": {
       "id": "107648",
       "name": "Ghrelin - Cafe and Patisserie",
       "cloudinaryImageId": "f37orhqt2pa7hxpxfv2q",
@@ -4672,6 +3351,60 @@
   },
   {
     "info": {
+      "id": "414835",
+      "name": "Pizza Hut",
+      "cloudinaryImageId": "2b4f62d606d1b2bfba9ba9e5386fabb7",
+      "locality": "Khairatabad",
+      "areaName": "Khairatabad",
+      "costForTwo": "₹350 for two",
+      "cuisines": ["Pizzas"],
+      "avgRating": 4,
+      "parentId": "721",
+      "avgRatingString": "4.0",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 59,
+        "lastMileTravel": 1.9,
+        "serviceability": "SERVICEABLE",
+        "slaString": "55-60 mins",
+        "lastMileTravelString": "1.9 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-23 00:00:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "aggregatedDiscountInfoV2": {},
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/pizza-hut-khairatabad-hyderabad-414835",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
       "id": "356688",
       "name": "Baskin Robbins - Ice Cream Desserts",
       "cloudinaryImageId": "85ccae4e3576f9330af102c46ca85395",
@@ -5112,6 +3845,723 @@
       "type": "WEBLINK"
     },
     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "376914",
+      "name": "Theobroma",
+      "cloudinaryImageId": "b033728dcb0101ceb19bff0e1e1f6474",
+      "locality": "Central Zone",
+      "areaName": "Somajiguda & Khairtabad",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Desserts"],
+      "avgRating": 4.6,
+      "parentId": "1040",
+      "avgRatingString": "4.6",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 40,
+        "lastMileTravel": 3.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "35-40 mins",
+        "lastMileTravelString": "3.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-23 00:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "newg.png",
+            "description": "Gourmet"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Gourmet",
+                  "imageId": "newg.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "10% OFF",
+        "subHeader": "ABOVE ₹159",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/theobroma-central-zone-somajiguda-and-khairtabad-hyderabad-376914",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "4138",
+      "name": "Grand Hotel",
+      "cloudinaryImageId": "g1arzw6qd7g9affkmgzk",
+      "locality": "Banjara Hills",
+      "areaName": "Abids",
+      "costForTwo": "₹300 for two",
+      "cuisines": ["Biryani", "Chinese", "Tandoor", "Haleem"],
+      "avgRating": 4.3,
+      "parentId": "4001",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 36,
+        "lastMileTravel": 3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "35-40 mins",
+        "lastMileTravelString": "3.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 23:59:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "10% OFF",
+        "subHeader": "UPTO ₹40"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/grand-hotel-banjara-hills-abids-hyderabad-4138",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "153046",
+      "name": "Huber & Holly",
+      "cloudinaryImageId": "cujunjtk1tta0i8t9ffw",
+      "locality": "RAFSA TOWER",
+      "areaName": "Himayath Nagar",
+      "costForTwo": "₹500 for two",
+      "cuisines": ["Pizzas", "Beverages", "Ice Cream"],
+      "avgRating": 4.3,
+      "veg": true,
+      "parentId": "6433",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 30,
+        "lastMileTravel": 1.8,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "1.8 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-23 02:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "newg.png",
+            "description": "Gourmet"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Gourmet",
+                  "imageId": "newg.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "50% OFF",
+        "subHeader": "UPTO ₹100"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/huber-and-holly-rafsa-tower-himayath-nagar-hyderabad-153046",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "355747",
+      "name": "Grameen Kulfi",
+      "cloudinaryImageId": "mwggy9gmdboqzi7gloms",
+      "locality": "KMIT",
+      "areaName": "Narayanguda",
+      "costForTwo": "₹120 for two",
+      "cuisines": ["Ice Cream", "Desserts"],
+      "avgRating": 4.6,
+      "veg": true,
+      "parentId": "12175",
+      "avgRatingString": "4.6",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 32,
+        "lastMileTravel": 2.4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "2.4 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 23:59:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "60% OFF",
+        "subHeader": "UPTO ₹120"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/grameen-kulfi-kmit-narayanguda-hyderabad-355747",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "24613",
+      "name": "Domino's Pizza",
+      "cloudinaryImageId": "hbeqc0r6ifvqiuychft2",
+      "locality": "Stock Exchange Road",
+      "areaName": "Himayath Nagar",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Pizzas", "Italian", "Pastas", "Desserts"],
+      "avgRating": 4.4,
+      "parentId": "2456",
+      "avgRatingString": "4.4",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 25,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25 mins",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 23:59:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹150 OFF",
+        "subHeader": "ABOVE ₹299",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/dominos-pizza-stock-exchange-road-himayath-nagar-hyderabad-24613",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "395225",
+      "name": "McDonald's Gourmet Burger Collection",
+      "cloudinaryImageId": "d3eewg9jbq6a94fzzc8k",
+      "locality": "Alto Trade Center",
+      "areaName": "Himayatnagar",
+      "costForTwo": "₹600 for two",
+      "cuisines": ["Burgers", "Beverages", "Cafe", "Desserts"],
+      "avgRating": 4.3,
+      "parentId": "10761",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "500+",
+      "sla": {
+        "deliveryTime": 35,
+        "lastMileTravel": 1.5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "1.5 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-23 01:45:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "aggregatedDiscountInfoV2": {},
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/mcdonalds-gourmet-burger-collection-alto-trade-center-himayatnagar-hyderabad-395225",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "27665",
+      "name": "Pista House",
+      "cloudinaryImageId": "xrnrtevdf9w3pfvxlaei",
+      "locality": "Himayath Nagar",
+      "areaName": "Himayath Nagar",
+      "costForTwo": "₹200 for two",
+      "cuisines": ["Bakery", "Pizzas", "Snacks", "Desserts"],
+      "avgRating": 4.4,
+      "parentId": "1732",
+      "avgRatingString": "4.4",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 33,
+        "lastMileTravel": 3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "3.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 22:30:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "15% OFF",
+        "subHeader": "UPTO ₹45"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/pista-house-himayath-nagar-hyderabad-27665",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "23707",
+      "name": "McDonald's",
+      "cloudinaryImageId": "bb7ae131544c7d37e10fc5faf76f09d6",
+      "locality": "Himayath Nagar",
+      "areaName": "Himayath Nagar",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Burgers", "Beverages", "Cafe", "Desserts"],
+      "avgRating": 4.3,
+      "parentId": "630",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 30,
+        "lastMileTravel": 1.5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "1.5 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-23 01:45:00",
+        "opened": true
+      },
+      "badges": {
+        "textExtendedBadges": [
+          {
+            "iconId": "guiltfree/GF_Logo_android_3x",
+            "shortDescription": "options available",
+            "fontColor": "#7E808C"
+          }
+        ]
+      },
+      "isOpen": true,
+      "aggregatedDiscountInfoV2": {},
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "",
+                  "fontColor": "#7E808C",
+                  "iconId": "guiltfree/GF_Logo_android_3x",
+                  "shortDescription": "options available"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/mcdonalds-himayath-nagar-hyderabad-23707",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "32129",
+      "name": "Burger King",
+      "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+      "locality": "Himayath Nagar",
+      "areaName": "Himayath Nagar",
+      "costForTwo": "₹350 for two",
+      "cuisines": ["Burgers", "American"],
+      "avgRating": 4.2,
+      "parentId": "166",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 52,
+        "lastMileTravel": 1.5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "50-55 mins",
+        "lastMileTravelString": "1.5 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-23 03:45:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹129"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/burger-king-himayath-nagar-hyderabad-32129",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "124165",
+      "name": "Starbucks Coffee",
+      "cloudinaryImageId": "258fe8a3577877fbfe064095ed1d9dc3",
+      "locality": "GVK1 Mall",
+      "areaName": "Banjara Hills",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+        "Beverages",
+        "Cafe",
+        "Snacks",
+        "Desserts",
+        "Bakery",
+        "Ice Cream"
+      ],
+      "avgRating": 4.3,
+      "parentId": "195515",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "5K+",
+      "sla": {
+        "deliveryTime": 57,
+        "lastMileTravel": 4.8,
+        "serviceability": "SERVICEABLE",
+        "slaString": "55-60 mins",
+        "lastMileTravelString": "4.8 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 22:00:00",
+        "opened": true
+      },
+      "badges": {
+        "textExtendedBadges": [
+          {
+            "iconId": "guiltfree/GF_Logo_android_3x",
+            "shortDescription": "options available",
+            "fontColor": "#7E808C"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "",
+                  "fontColor": "#7E808C",
+                  "iconId": "guiltfree/GF_Logo_android_3x",
+                  "shortDescription": "options available"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹219"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/starbucks-coffee-gvk1-mall-banjara-hills-hyderabad-124165",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "74979",
+      "name": "Ohri's Cake Nation",
+      "cloudinaryImageId": "77ab0c8da09a193b8fa4694b591d3301",
+      "locality": "Basheerbagh",
+      "areaName": "Basheerbagh",
+      "costForTwo": "₹450 for two",
+      "cuisines": ["Bakery", "Desserts", "Beverages"],
+      "avgRating": 4.4,
+      "veg": true,
+      "parentId": "233127",
+      "avgRatingString": "4.4",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 28,
+        "lastMileTravel": 0.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "0.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 23:59:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "v1695133679/badges/Pure_Veg111.png",
+            "description": "pureveg"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "pureveg",
+                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "60% OFF",
+        "subHeader": "UPTO ₹120"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/ohris-cake-nation-basheerbagh-hyderabad-74979",
+      "type": "WEBLINK"
+    }
   },
   {
     "info": {
@@ -5630,6 +5080,556 @@
     "analytics": {},
     "cta": {
       "link": "https://www.swiggy.com/restaurants/amay-tiffin-corner-amul-tilak-road-king-koti-hyderabad-10251",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "17104",
+      "name": "KFC",
+      "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
+      "locality": "Prime Plaza",
+      "areaName": "Himayatnagar",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
+      "avgRating": 4.2,
+      "parentId": "547",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 35,
+        "lastMileTravel": 1.5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "35-40 mins",
+        "lastMileTravelString": "1.5 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-23 01:00:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "40% OFF",
+        "subHeader": "UPTO ₹80"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/kfc-prime-plaza-himayatnagar-hyderabad-17104",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "251589",
+      "name": "Euphoria",
+      "cloudinaryImageId": "if3oxttqnbedseg0cpbd",
+      "locality": "Paradise",
+      "areaName": "Paradise Cross Roads",
+      "costForTwo": "₹600 for two",
+      "cuisines": ["Desserts", "Bakery"],
+      "avgRating": 4.8,
+      "parentId": "8132",
+      "avgRatingString": "4.8",
+      "totalRatingsString": "100+",
+      "sla": {
+        "deliveryTime": 36,
+        "lastMileTravel": 4.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "35-40 mins",
+        "lastMileTravelString": "4.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 23:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "newg.png",
+            "description": "Gourmet"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Gourmet",
+                  "imageId": "newg.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "10% OFF",
+        "subHeader": "UPTO ₹40"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/euphoria-paradise-paradise-cross-roads-hyderabad-251589",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "25251",
+      "name": "Meridian Restaurant",
+      "cloudinaryImageId": "cxvuxxwpkicbqo3nkqiy",
+      "locality": "Panjagutta",
+      "areaName": "Panjagutta",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Biryani", "Chinese", "North Indian", "Kebabs"],
+      "avgRating": 4.3,
+      "parentId": "19276",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 47,
+        "lastMileTravel": 4.2,
+        "serviceability": "SERVICEABLE",
+        "slaString": "45-50 mins",
+        "lastMileTravelString": "4.2 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 23:50:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "aggregatedDiscountInfoV2": {},
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/meridian-restaurant-panjagutta-hyderabad-25251",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "233054",
+      "name": "Sweet Truth - Cake and Desserts",
+      "cloudinaryImageId": "2bff7ef1c40b8a1d356fcf9d487324f9",
+      "locality": "Mahesh Nagar",
+      "areaName": "Abids",
+      "costForTwo": "₹450 for two",
+      "cuisines": ["Snacks", "Bakery", "Desserts", "Beverages"],
+      "avgRating": 4,
+      "parentId": "4444",
+      "avgRatingString": "4.0",
+      "totalRatingsString": "500+",
+      "sla": {
+        "deliveryTime": 42,
+        "lastMileTravel": 2.2,
+        "serviceability": "SERVICEABLE",
+        "slaString": "40-45 mins",
+        "lastMileTravelString": "2.2 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 23:59:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "60% OFF",
+        "subHeader": "UPTO ₹110"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/sweet-truth-cake-and-desserts-mahesh-nagar-abids-hyderabad-233054",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "233052",
+      "name": "Oven Story Pizza - Standout Toppings",
+      "cloudinaryImageId": "f986df6f1a1fcf2ff24d2eaf44d570a7",
+      "locality": "Mahesh Nagar",
+      "areaName": "Abids",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Pizzas", "Pastas", "Italian", "Desserts", "Beverages"],
+      "avgRating": 4.1,
+      "parentId": "3534",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "5K+",
+      "sla": {
+        "deliveryTime": 25,
+        "lastMileTravel": 2.2,
+        "serviceability": "SERVICEABLE",
+        "slaString": "23-28 mins",
+        "lastMileTravelString": "2.2 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 23:59:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹125 OFF",
+        "subHeader": "ABOVE ₹1099",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/oven-story-pizza-standout-toppings-mahesh-nagar-abids-hyderabad-233052",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "373904",
+      "name": "Baskin Robbins",
+      "cloudinaryImageId": "85ccae4e3576f9330af102c46ca85395",
+      "locality": "BHARGAVI ENCLAVE",
+      "areaName": "Nallakunta & Vidyanagar",
+      "costForTwo": "₹250 for two",
+      "cuisines": ["Desserts", "Ice Cream"],
+      "avgRating": 4.2,
+      "veg": true,
+      "parentId": "5588",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "500+",
+      "sla": {
+        "deliveryTime": 30,
+        "lastMileTravel": 2.3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "2.3 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-29 00:00:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "30% OFF",
+        "subHeader": "UPTO ₹75"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/baskin-robbins-bhargavi-enclave-nallakunta-and-vidyanagar-hyderabad-373904",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "262087",
+      "name": "Imperial Multi-Cusine Restaurant",
+      "cloudinaryImageId": "rqlwvsmzcfxbg9u6ajgm",
+      "locality": "Banjara Hills",
+      "areaName": "Redhills",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Biryani", "Chinese", "Indian", "Kebabs", "Tandoor"],
+      "avgRating": 4.2,
+      "parentId": "19254",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 42,
+        "lastMileTravel": 3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "40-45 mins",
+        "lastMileTravelString": "3.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-23 02:00:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "40% OFF",
+        "subHeader": "UPTO ₹80"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/imperial-multi-cusine-restaurant-banjara-hills-redhills-hyderabad-262087",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "27739",
+      "name": "Cafe Niloufer Classic",
+      "cloudinaryImageId": "882922742c3b3abc54ae9fde6d6c236d",
+      "locality": "Oshiwara",
+      "areaName": "Red Hills",
+      "costForTwo": "₹150 for two",
+      "cuisines": ["Bakery", "Beverages", "Snacks", "Desserts"],
+      "avgRating": 4.6,
+      "parentId": "466854",
+      "avgRatingString": "4.6",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 46,
+        "lastMileTravel": 3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "45-50 mins",
+        "lastMileTravelString": "3.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-23 00:30:00",
+        "opened": true
+      },
+      "badges": {},
+      "isOpen": true,
+      "aggregatedDiscountInfoV2": {},
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {},
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/cafe-niloufer-classic-oshiwara-red-hills-hyderabad-27739",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "547809",
+      "name": "Theobroma",
+      "cloudinaryImageId": "b033728dcb0101ceb19bff0e1e1f6474",
+      "locality": "Himayath Nagar",
+      "areaName": "Himayath Nagar",
+      "costForTwo": "₹400 for two",
+      "cuisines": ["Desserts"],
+      "avgRating": 4.5,
+      "parentId": "1040",
+      "avgRatingString": "4.5",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 24,
+        "lastMileTravel": 1,
+        "serviceability": "SERVICEABLE",
+        "slaString": "20-25 mins",
+        "lastMileTravelString": "1.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-22 22:55:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "newg.png",
+            "description": "Gourmet"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Gourmet",
+                  "imageId": "newg.png"
+                }
+              }
+            ]
+          },
+          "textBased": {},
+          "textExtendedBadges": {}
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹150 OFF",
+        "subHeader": "ABOVE ₹1149",
+        "discountTag": "FLAT DEAL"
+      },
+      "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {},
+          "video": {}
+        }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/theobroma-himayath-nagar-hyderabad-547809",
       "text": "RESTAURANT_MENU",
       "type": "WEBLINK"
     },

@@ -45,3 +45,24 @@ LLD
   - copyright
   - address
   - contact
+
+#Two types of export/import
+
+-Default export/import - basic
+export default Component;
+
+-Named export/import - used when multiple items are to be imported
+export const Component;
+import {component} from "path";
+
+#React Hooks (Regular JS utility functions )
+
+React is fast because it is doing efficient DOM manipulation by using virtual DOM
+
+- useState()-> super powerful state variables
+  Whenever the state variable changes react will rerender
+- useEffect()
+
+React Algorithm - Reconcilation Algo/ React fiber
+Virtual Dom --> Nested JS object, representation of actual DOM
+Reconciliation --> finds out the diff betwen real and virtual dom and renders

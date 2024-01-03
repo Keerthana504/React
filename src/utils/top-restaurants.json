@@ -36,6 +36,11 @@
             "textExtendedBadges": {}
           }
         },
+        "aggregatedDiscountInfoV3": {
+          "header": "15% OFF",
+          "subHeader": "ABOVE ₹129",
+          "discountTag": "FLAT DEAL"
+        },
         "differentiatedUi": {
           "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
           "differentiatedUiMediaDetails": {

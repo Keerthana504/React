@@ -4,7 +4,7 @@ import data from "./utils/imageGridCard.json";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import DishesCarousel from "./components/DishesCarousel";
-import Body from "./components/Body";
+import Main from "./components/Main";
 import Footer from "./components/Footer";
 
 const AppLayout = () => {
@@ -14,7 +14,7 @@ const AppLayout = () => {
       <Banner></Banner>
       <DishesCarousel imgData={data}></DishesCarousel>
       <div className="divider"></div>
-      <Body></Body>
+      <Main></Main>
       <Footer></Footer>
     </div>
   );
