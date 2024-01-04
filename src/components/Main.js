@@ -3,35 +3,41 @@ import topRes from "../utils/top-restaurants.json";
 import leftArr from "../../assets/icons8-left-arrow-50.png";
 import rightArr from "../../assets/icons8-right-arrow-50.png";
 import RestaurantCard from "./RestaurantCard";
-
-const isEnable = (slide) => {
-  if (slide === 5) {
-    document.querySelector(".right-btn").disabled = true;
-  } else if (slide === 1) {
-    document.querySelector(".left-btn").disabled = true;
-  } else if (slide > 1 && slide < 5) {
-    document.querySelector(".right-btn").disabled = false;
-    document.querySelector(".left-btn").disabled = false;
-  }
-};
+import { useState } from "react";
 
 const Main = () => {
+  const [listOfRestaurants, setListOfRestaurants] = useState(dataSet);
   let slide = 1;
+  let length = 5;
 
   const moveLeftImg = () => {
+    console.log("before", slide);
+    slide > 0 ? slide-- : (slide = length);
     const moreRes = document.querySelector(".top-res");
-    moreRes.style.transform = `translateX(-${slide * 5 * 225}px)`;
-    slide--;
-    isEnable(slide);
-    console.log(slide);
+    moreRes.style.transform =
+      slide > 0
+        ? `translateX(-${slide * (length - 1) * 205}px)`
+        : `translateX(-${slide * (length - 2) * 205}px)`;
+    console.log("after", slide);
   };
 
   const moveRightImg = () => {
     const moreRes = document.querySelector(".top-res");
-    moreRes.style.transform = `translateX(-${slide * 5 * 225}px)`;
-    slide++;
-    isEnable(slide);
+    moreRes.style.transform =
+      slide < length
+        ? `translateX(-${slide * length * 205}px)`
+        : `translateX(0px)`;
+    slide < length ? slide++ : (slide = 1);
     console.log(slide);
+  };
+
+  const onFilterRating = () => {
+    console.log(listOfRestaurants);
+    const topRes = listOfRestaurants.filter((data) => {
+      return data.info.avgRating > 4.3;
+    });
+    console.log(topRes);
+    setListOfRestaurants(topRes);
   };
 
   const showMoreRes = () => {};
@@ -66,9 +72,19 @@ const Main = () => {
         <p className="sub-heading">
           Restaurants with online food delivery in Hyderabad
         </p>
+        <div className="filter-sec">
+          <button
+            className="filter-rating-btn"
+            onClick={() => {
+              onFilterRating();
+            }}
+          >
+            Rating 4+
+          </button>
+        </div>
       </section>
       <section className="res-container">
-        {dataSet.map((data) => (
+        {listOfRestaurants.map((data) => (
           <RestaurantCard data={data} className="res-card"></RestaurantCard>
         ))}
         <div className="show-more-section">

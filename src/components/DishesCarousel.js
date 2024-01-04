@@ -15,34 +15,27 @@ const processImageData = (data) => {
   return newImgList;
 };
 
-const isEnable = (slide) => {
-  if (slide === 3) {
-    document.querySelector(".right-btn").disabled = true;
-  } else if (slide === 1) {
-    document.querySelector(".left-btn").disabled = true;
-  } else if (slide > 1 && slide < 3) {
-    document.querySelector(".right-btn").disabled = false;
-    document.querySelector(".left-btn").disabled = false;
-  }
-};
-
 const DishesCarousel = (props) => {
-  // const moreImg = document.querySelector(".carousel-img");
   let slide = 1;
+  let length = 3; // move no. of images
 
   const moveLeftImg = () => {
     const moreImg = document.querySelector(".carousel-img");
-    moreImg.style.transform = `translateX(-${slide * 7 * 200}px)`;
-    slide--;
-    isEnable(slide);
+    slide > 0 ? slide-- : (slide = length);
+    moreImg.style.transform =
+      slide > 0
+        ? `translateX(-${slide * (length - 1) * 400}px)`
+        : `translateX(-${slide * (length - 2) * 400}px)`;
     console.log(slide);
   };
 
   const moveRightImg = () => {
     const moreImg = document.querySelector(".carousel-img");
-    moreImg.style.transform = `translateX(-${slide * 7 * 200}px)`;
-    slide++;
-    isEnable(slide);
+    moreImg.style.transform =
+      slide < length
+        ? `translateX(-${slide * length * 400}px)`
+        : `translateX(0px)`;
+    slide < length ? slide++ : (slide = 1);
     console.log(slide);
   };
 

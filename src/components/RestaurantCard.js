@@ -1,16 +1,9 @@
 import rating from "../../assets/favorite-5785.png";
 import { RESTR0_ASSET_URL } from "../utils/constants";
-//import { useState } from "react";
 
 const RestaurantCard = (props) => {
-  //const [topRestaurants, setTopRestaurants] = useState(dataSet);
   const info = props.data.info;
   const link = props.data.cta.link;
-
-  // const topRes = topRestaurants.filter((data) => {
-  //   data.info.avgRating > 4;
-  // });
-  // setTopRestaurants(topRes);
 
   return (
     <section className={props.className} key={info.id}>
