@@ -3,10 +3,28 @@ import topRes from "../utils/top-restaurants.json";
 import leftArr from "../../assets/icons8-left-arrow-50.png";
 import rightArr from "../../assets/icons8-right-arrow-50.png";
 import RestaurantCard from "./RestaurantCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Main = () => {
-  const [listOfRestaurants, setListOfRestaurants] = useState(dataSet);
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  // const [listOfTopRes, setListOfTopRes] = useState(topRes);
+
+  useEffect(() => {
+    console.log("Hey useEffect");
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.406498&lng=78.47724389999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
+    const json = await data.json();
+    console.log(json);
+    setListOfRestaurants(
+      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
+  };
+
   let slide = 1;
   let length = 5;
 
@@ -40,7 +58,24 @@ const Main = () => {
     setListOfRestaurants(topRes);
   };
 
-  const showMoreRes = () => {};
+  const showMoreRes = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/api/seo/getListing?lat=17.425938120298223&lng=78.39342287825744"
+      // https://www.swiggy.com/api/seo/getListing?lat=17.425938120298223&lng=78.39342287825744
+      // https://www.swiggy.com/api/seo/getListing?lat=17.425938120298223&lng=78.39342287825744
+    );
+    const json = await data.json();
+    console.log(listOfRestaurants);
+    console.log(
+      json?.data?.success?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
+    const updatedList =
+      json?.data?.success?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants;
+    setListOfRestaurants([...listOfRestaurants, ...updatedList]);
+  };
+
   return (
     <main className="body-container">
       <div className="carousel-text">
@@ -67,6 +102,8 @@ const Main = () => {
             ></RestaurantCard>
           ))}
         </section>
+        <div className="progress-bar m-bottom"></div>
+        <div className="divider no-margin m-bottom"></div>
       </div>
       <section className="filter-res">
         <p className="sub-heading">
@@ -84,8 +121,12 @@ const Main = () => {
         </div>
       </section>
       <section className="res-container">
-        {listOfRestaurants.map((data) => (
-          <RestaurantCard data={data} className="res-card"></RestaurantCard>
+        {listOfRestaurants?.map((data) => (
+          <RestaurantCard
+            key={data.info.id}
+            data={data}
+            className="res-card"
+          ></RestaurantCard>
         ))}
         <div className="show-more-section">
           <button className="show-more" onClick={() => showMoreRes()}>

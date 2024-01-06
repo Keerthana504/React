@@ -29,6 +29,10 @@ a {
   margin-bottom: 8px;
 }
 
+.no-margin {
+  margin: 0 !important;
+}
+
 .divider {
   margin: 10px 100px;
   border: 1px solid lightgray;
@@ -245,11 +249,40 @@ a {
 .carousel-img {
   display: flex;
   align-items: center;
+  overflow: scroll hidden;
+}
+
+.carousel-img::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel-img img {
   height: 200px;
   width: 200px;
+}
+
+.progress-bar {
+  width: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  height: 4px;
+  border-radius: 2px;
+  position: relative;
+  background-color: rgb(240, 240, 245);
+}
+
+.progress-bar::before {
+  content: "";
+  background-color: rgb(241, 87, 0);
+  position: absolute;
+  border-radius: 2px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: calc(44.2623%);
+  transform: translateX(calc(0px));
+  transition: all 0.1s ease-out 0s;
 }
 
 .body-container {
@@ -258,6 +291,8 @@ a {
 
 .frame-overflow {
   overflow: hidden;
+  -webkit-box-pack: justify;
+  -webkit-box-align: baseline;
 }
 
 .top-res {
@@ -265,8 +300,12 @@ a {
   flex-wrap: nowrap;
   padding: 20px;
   gap: 15px;
-  border-bottom: 1px solid lightgray;
   margin-bottom: 20px;
+  overflow: scroll hidden;
+}
+
+.top-res::-webkit-scrollbar {
+  display: none;
 }
 
 .top-restaurants {
@@ -293,9 +332,15 @@ a {
   padding-left: 10px;
   text-transform: uppercase;
 }
+
+.filter-res,
+.filter-sec {
+  margin-top: 30px;
+}
+
 .filter-rating-btn {
   padding: 8px;
-  margin: 12px;
+  margin-left: 12px;
   width: 10%;
   border-radius: 20px;
   outline: none;
@@ -531,6 +576,7 @@ footer .footer-container .sec p::after {
   justify-content: center;
   align-items: center;
   gap: 2px;
+  cursor: pointer;
 }
 
 /* * header media queries */
@@ -572,7 +618,7 @@ footer .footer-container .sec p::after {
     width: 100%;
     border-radius: 0;
     margin: 0;
-    background: #065351ba;
+    background: #005b59;
   }
   .carousel-box,
   .body-container {

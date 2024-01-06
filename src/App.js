@@ -6,16 +6,20 @@ import Banner from "./components/Banner";
 import DishesCarousel from "./components/DishesCarousel";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import Welcome from "../assignments/day2";
+import Counter from "../assignments/counter";
 
 const AppLayout = () => {
   return (
     <div className="app-container">
-      <Header></Header>
+      {/* <Header></Header>
       <Banner></Banner>
       <DishesCarousel imgData={data}></DishesCarousel>
       <div className="divider"></div>
       <Main></Main>
-      <Footer></Footer>
+      <Footer></Footer> */}
+      <Welcome name="Keerthana" title="Frontend Developer"></Welcome>
+      <Counter></Counter>
     </div>
   );
 };
