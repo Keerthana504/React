@@ -7,7 +7,7 @@ import DishesCarousel from "./components/DishesCarousel";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Welcome from "../assignments/day2";
-import Counter from "../assignments/counter";
+import Counter from "../assignments/Counter";
 
 const AppLayout = () => {
   return (

@@ -61,6 +61,10 @@ React is fast because it is doing efficient DOM manipulation by using virtual DO
 
 - useState()-> super powerful state variables
 
+  - useState are important in React because react does not keep a track of local variables
+  - useState does not update the state by itself, the object / array has be updated first and then passed to the setter function. Likewise we have to append the values before changing the state.
+  - when dealing with objects and arrays, always make sure to spread your state variable and then call the setter function.
+
   - Whenever the state variable changes react will rerender
   - useState hook is called inside a function component only.
   - dont create state variables inside conditions or functions, they are meant to be on top of the component and first thing in a component

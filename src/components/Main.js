@@ -76,6 +76,13 @@ const Main = () => {
     setListOfRestaurants([...listOfRestaurants, ...updatedList]);
   };
 
+  const topRestaurantList = topRes.restaurants.map((res) => (
+    <RestaurantCard
+      data={res}
+      className="top-restaurants res-card"
+    ></RestaurantCard>
+  ));
+
   return (
     <main className="body-container">
       <div className="carousel-text">
@@ -94,14 +101,7 @@ const Main = () => {
         </p>
       </div>
       <div className="frame-overflow">
-        <section className="top-res">
-          {topRes.restaurants.map((data) => (
-            <RestaurantCard
-              data={data}
-              className="top-restaurants res-card"
-            ></RestaurantCard>
-          ))}
-        </section>
+        <section className="top-res">{topRestaurantList}</section>
         <div className="progress-bar m-bottom"></div>
         <div className="divider no-margin m-bottom"></div>
       </div>
