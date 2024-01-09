@@ -72,10 +72,25 @@ React is fast because it is doing efficient DOM manipulation by using virtual DO
 - useEffect(()=>{}, [])
   -Takes two arguments -> arrow function, dependency array
   -Call back function will be called after the page is rendered.
-  1. if no dependency array useEffect is called on every call render
-  2. if there is an empty useEffect is called just for once on initial render
+  1. if no dependency array useEffect is called on every render
+  2. if there is an empty array useEffect is called just for once on initial render
   3. if dependency array is mentioned, then everytime a dependency array changes the useEffect is executed
 
 React Algorithm - Reconcilation Algo/ React fiber
 Virtual Dom --> Nested JS object, representation of actual DOM
 Reconciliation --> finds out the diff betwen real and virtual dom and renders
+
+Handling data in forms in two ways : Controlled Component - Uncontrolled Component
+In a controlled component, form data is handled by a React component.
+The alternative is uncontrolled components, where form data is handled by the DOM itself.
+
+Controlled components
+-An input form element whose value is controlled by React in this way is called a “controlled component”.
+-React state be the “single source of truth”
+-Controls what happens in that form on subsequent user input.
+-useState and setState are used to set and update the input value
+
+Uncontrolled components
+-uncontrolled component keeps the source of truth in the DOM
+-Uncontrolled components dont use value property, they use defaultValue for showing the default state instead
+-React.CreateRefs() in constructor and ref keyword on the element are used to access the value of the DOM element

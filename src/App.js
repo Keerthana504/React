@@ -7,7 +7,8 @@ import DishesCarousel from "./components/DishesCarousel";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import Welcome from "../assignments/day2";
-import Counter from "../assignments/Counter";
+import Uncontrolled from "../assignments/uncontrolled";
+87;
 
 const AppLayout = () => {
   return (
@@ -19,7 +20,7 @@ const AppLayout = () => {
       <Main></Main>
       <Footer></Footer> */}
       <Welcome name="Keerthana" title="Frontend Developer"></Welcome>
-      <Counter></Counter>
+      <Uncontrolled></Uncontrolled>
     </div>
   );
 };
