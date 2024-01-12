@@ -12,6 +12,11 @@ const Main = () => {
   useEffect(() => {
     console.log("Hey useEffect");
     fetchData();
+    const topResScroll = document.querySelector("#topRes");
+    topResScroll.addEventListener("scroll", handleScroll);
+    return () => {
+      topResScroll.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const fetchData = async () => {
@@ -21,8 +26,45 @@ const Main = () => {
     const json = await data.json();
     console.log(json);
     setListOfRestaurants(
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+  };
+
+  let scrollCount = 0;
+  let scrollPosition;
+  const initailStylesLen = document.styleSheets[1].cssRules.length;
+
+  const handleScroll = () => {
+    scrollPosition = document.querySelector("#topRes").scrollLeft; // => scroll position
+    const pixels = (scrollPosition * 2) / 100 + 20;
+    document.styleSheets[1].insertRule(
+      `.progress-bar::before { transform: translateX(${pixels}px) }`,
+      scrollCount
+    );
+    if (scrollPosition === 0) {
+      removeNewStyles(scrollPosition);
+    }
+    scrollPosition === 0 ? (scrollCount = 0) : scrollCount++;
+  };
+
+  const removeNewStyles = () => {
+    let newStylesLen =
+      document.styleSheets[1].cssRules.length - initailStylesLen;
+    console.log("new", newStylesLen);
+    for (i = 0; i < newStylesLen; i++) {
+      if (
+        document.styleSheets[1].cssRules[0].selectorText.includes(
+          ".progress-bar::before"
+        )
+      ) {
+        document.styleSheets[1].deleteRule(0);
+      } else {
+        document.styleSheets[1].insertRule(
+          ".progress-bar::before { transform: translateX(0px) }",
+          initailStylesLen + 1
+        );
+      }
+    }
   };
 
   let slide = 1;
@@ -30,23 +72,37 @@ const Main = () => {
 
   const moveLeftImg = () => {
     console.log("before", slide);
-    slide > 0 ? slide-- : (slide = length);
+    slide > 1 ? slide-- : (slide = length);
     const moreRes = document.querySelector(".top-res");
-    moreRes.style.transform =
-      slide > 0
-        ? `translateX(-${slide * (length - 1) * 205}px)`
-        : `translateX(-${slide * (length - 2) * 205}px)`;
+    if (slide > 0) {
+      moreRes.style.transform = `translateX(-${slide * (length - 1) * 205}px)`;
+      document.styleSheets[1].insertRule(
+        `.progress-bar::before { transform: translateX(${(slide - 1) * 25}px)}`,
+        length - slide
+      );
+    } else {
+      moreRes.style.transform = `translateX(-${slide * (length - 2) * 205}px)`;
+    }
+    if (slide === 1) {
+      removeNewStyles();
+    }
     console.log("after", slide);
   };
 
   const moveRightImg = () => {
     const moreRes = document.querySelector(".top-res");
-    moreRes.style.transform =
-      slide < length
-        ? `translateX(-${slide * length * 205}px)`
-        : `translateX(0px)`;
+    if (slide < length) {
+      moreRes.style.transform = `translateX(-${slide * length * 205}px)`;
+      document.styleSheets[1].insertRule(
+        `.progress-bar::before { transform: translateX(${slide * 25}px)}`,
+        slide - 1
+      );
+    } else {
+      moreRes.style.transform = `translateX(0px)`;
+      removeNewStyles();
+    }
     slide < length ? slide++ : (slide = 1);
-    console.log(slide);
+    // console.log(slide);
   };
 
   const onFilterRating = () => {
@@ -61,8 +117,6 @@ const Main = () => {
   const showMoreRes = async () => {
     const data = await fetch(
       "https://www.swiggy.com/api/seo/getListing?lat=17.425938120298223&lng=78.39342287825744"
-      // https://www.swiggy.com/api/seo/getListing?lat=17.425938120298223&lng=78.39342287825744
-      // https://www.swiggy.com/api/seo/getListing?lat=17.425938120298223&lng=78.39342287825744
     );
     const json = await data.json();
     console.log(listOfRestaurants);
@@ -100,8 +154,10 @@ const Main = () => {
           </button>
         </p>
       </div>
-      <div className="frame-overflow">
+      <div className="frame-overflow" id="topRes">
         <section className="top-res">{topRestaurantList}</section>
+      </div>
+      <div>
         <div className="progress-bar m-bottom"></div>
         <div className="divider no-margin m-bottom"></div>
       </div>

@@ -103,11 +103,12 @@ a {
 }
 
 .search-container input {
-  padding: 16px;
   border: none;
   width: 100%;
   border-radius: 30px;
   outline: none;
+  padding: 0 12px;
+  font-size: 20px;
 }
 
 .nav-items {
@@ -249,7 +250,6 @@ a {
 .carousel-img {
   display: flex;
   align-items: center;
-  overflow: scroll hidden;
 }
 
 .carousel-img::-webkit-scrollbar {
@@ -262,13 +262,14 @@ a {
 }
 
 .progress-bar {
-  width: 48px;
+  width: 125px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  height: 4px;
+  height: 5px;
   border-radius: 2px;
   position: relative;
+  overflow: hidden;
   background-color: rgb(240, 240, 245);
 }
 
@@ -280,8 +281,7 @@ a {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  width: calc(44.2623%);
-  transform: translateX(calc(0px));
+  width: calc(24.2623%);
   transition: all 0.1s ease-out 0s;
 }
 
@@ -290,7 +290,7 @@ a {
 }
 
 .frame-overflow {
-  overflow: hidden;
+  overflow: scroll hidden;
   -webkit-box-pack: justify;
   -webkit-box-align: baseline;
 }
@@ -301,10 +301,9 @@ a {
   padding: 20px;
   gap: 15px;
   margin-bottom: 20px;
-  overflow: scroll hidden;
 }
 
-.top-res::-webkit-scrollbar {
+.frame-overflow::-webkit-scrollbar {
   display: none;
 }
 
@@ -805,13 +804,13 @@ footer .footer-container .sec p::after {
 @media (min-width: 1280px) and (max-width: 1900) {
   /* Styles for small screens */
   .logo {
-    max-width: 28%;
+    max-width: 21%;
   }
   .banner img {
-    width: 18%;
+    width: 15%;
   }
   .banner .thali {
-    width: 45%;
+    width: 40%;
   }
   .curve {
     top: 40%;

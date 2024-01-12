@@ -21,7 +21,7 @@ const DishesCarousel = (props) => {
 
   const moveLeftImg = () => {
     const moreImg = document.querySelector(".carousel-img");
-    slide > 0 ? slide-- : (slide = length);
+    slide > 1 ? slide-- : (slide = length);
     moreImg.style.transform =
       slide > 0
         ? `translateX(-${slide * (length - 1) * 400}px)`
@@ -42,7 +42,7 @@ const DishesCarousel = (props) => {
   let newImgList = processImageData(props.imgData);
 
   return (
-    <section className="carousel-box frame-overflow">
+    <section className="carousel-box ">
       <div className="carousel-text">
         <p className="sub-heading">What's on your mind?</p>
         <p className="carousel-btn">
@@ -54,12 +54,14 @@ const DishesCarousel = (props) => {
           </button>
         </p>
       </div>
-      <div className="carousel-img">
-        {newImgList.map((item) => {
-          return (
-            <img src={item.imageURL} alt="carousel image" key={item.id}></img>
-          );
-        })}
+      <div className="frame-overflow" id="dishes">
+        <div className="carousel-img">
+          {newImgList.map((item) => {
+            return (
+              <img src={item.imageURL} alt="carousel image" key={item.id}></img>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

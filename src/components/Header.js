@@ -11,6 +11,17 @@ const hideSidebar = () => {
   sidebar.style.display = "none";
 };
 
+const onSearchRestaurant = (event) => {
+  let searchKey = event.target.value;
+  console.log(searchKey);
+};
+
+let signIn = "Login";
+const onLogin = (event) => {
+  console.log("loggedIn");
+  signIn === "signIn" ? (signIn = "Logout") : (signIn = "signIn");
+};
+
 const Header = () => {
   return (
     <header className="header">
@@ -34,6 +45,7 @@ const Header = () => {
             type="search"
             id=""
             name=""
+            onChange={(event) => onSearchRestaurant(event)}
           ></input>
         </section>
       </section>
@@ -67,8 +79,8 @@ const Header = () => {
           <li>
             <a href="#">Cart</a>
           </li>
-          <li>
-            <a href="#">Login</a>
+          <li onClick={(event) => onLogin(event)}>
+            <a href="#">${signIn}</a>
           </li>
         </ul>
         <ul className="main-bar">
@@ -92,7 +104,7 @@ const Header = () => {
               Cart
             </a>
           </li>
-          <li className="hideOnMobile">
+          <li className="hideOnMobile" onClick={(event) => onLogin(event)}>
             <a href="#">
               <img
                 width="50"
@@ -100,7 +112,7 @@ const Header = () => {
                 src={USER_URL}
                 alt="gender-neutral-user"
               />
-              Login
+              ${signIn}
             </a>
           </li>
           <li className="menu-button" onClick={showSidebar}>
