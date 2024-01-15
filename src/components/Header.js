@@ -1,5 +1,6 @@
 import chefLogo from "../../assets/chef-icon-logo.png";
 import { CART_URL, USER_URL } from "../utils/constants";
+import { useState } from "react";
 
 const showSidebar = () => {
   const sidebar = document.querySelector(".sidebar");
@@ -11,18 +12,19 @@ const hideSidebar = () => {
   sidebar.style.display = "none";
 };
 
-const onSearchRestaurant = (event) => {
-  let searchKey = event.target.value;
-  console.log(searchKey);
-};
-
-let signIn = "Login";
-const onLogin = (event) => {
-  console.log("loggedIn");
-  signIn === "signIn" ? (signIn = "Logout") : (signIn = "signIn");
-};
-
 const Header = () => {
+  const [isLogin, setIsLogin] = useState("Login");
+  const onSearchRestaurant = (event) => {
+    let searchKey = event.target.value;
+    console.log(searchKey);
+  };
+
+  let signIn = "false";
+  const onLogin = (event) => {
+    console.log("loggedIn");
+    signIn === "signIn" ? (signIn = "Logout") : (signIn = "signIn");
+  };
+
   return (
     <header className="header">
       <section className="logo-container">
@@ -80,7 +82,7 @@ const Header = () => {
             <a href="#">Cart</a>
           </li>
           <li onClick={(event) => onLogin(event)}>
-            <a href="#">${signIn}</a>
+            <a href="#">{isLogin}</a>
           </li>
         </ul>
         <ul className="main-bar">
@@ -112,7 +114,7 @@ const Header = () => {
                 src={USER_URL}
                 alt="gender-neutral-user"
               />
-              ${signIn}
+              {isLogin}
             </a>
           </li>
           <li className="menu-button" onClick={showSidebar}>
