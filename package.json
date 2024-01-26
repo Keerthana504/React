@@ -5,8 +5,8 @@
   "description": "This is my first react project",
   "scripts": {
     "start": "parcel index.html",
-    "predeploy": "parcel build src/index.html -d build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "parcel build index.html",
+    "deploy": "gh-pages -d dist",
     "build": "parcel build index.html",
     "test": "jest"
   },
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
-    "parcel": "^2.10.3",
+    "parcel": "^2.11.0",
     "parcel-bundler": "^1.12.5",
     "process": "^0.11.10"
   },
