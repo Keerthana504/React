@@ -5,9 +5,9 @@
   "description": "This is my first react project",
   "scripts": {
     "start": "parcel index.html",
-    "predeploy": "parcel build index.html",
+    "predeploy": "parcel build ./index.html",
     "deploy": "gh-pages -d dist",
-    "build": "parcel build index.html",
+    "build": "parcel build ./index.html",
     "test": "jest"
   },
   "repository": {
