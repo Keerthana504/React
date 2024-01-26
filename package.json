@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Keerthana504.github.io/react",
   "name": "react-project",
   "version": "1.0.0",
   "description": "This is my first react project",
   "scripts": {
     "start": "parcel index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "parcel build index.html",
     "test": "jest"
   },
@@ -19,8 +22,8 @@
   "bugs": {
     "url": "https://github.com/Keerthana504/React/issues"
   },
-  "homepage": "https://github.com/Keerthana504/React#readme",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "parcel": "^2.10.3",
     "process": "^0.11.10"
   },
